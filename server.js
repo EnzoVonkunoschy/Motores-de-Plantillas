@@ -1,4 +1,5 @@
 import express from 'express';
+import { getTemplate,getNavegacion as getNav } from './templates.js';
 
 //const routes = require('./routes');
 import router from './routes/routes.js'
@@ -10,14 +11,15 @@ app.get('/',function(req,res){
     res.send('Bienvenido a Tutoriales');
 });*/
 
-app.get('/Node',function(req,res)
+app.get('/node',function(req,res)
 {
  res.send("Tutorial en Node");
 });
-app.get('/Angular',function(req,res)
+app.get('/angular',function(req,res)
 {
  res.send("Tutorial en Angular");
 });
+
 
 
 
