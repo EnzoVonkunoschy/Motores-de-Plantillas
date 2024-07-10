@@ -15,3 +15,12 @@ npm init -y
 npm i express
 npm i ejs
 
+(+ partials y pages)
+
+$ git branch
+  master
+  rama1
+  rama2
+  rama2b
+* rama2c
+

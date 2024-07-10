@@ -7,6 +7,10 @@ router.get('/', (req, res) => {
   //res.send('¡Bienvenido a nuestra página de inicio!');
   res.render('pages/index')
 });
+router.get('/about', (req, res) => {
+  //res.send('¡Bienvenido a nuestra página de inicio!');
+  res.render('pages/about')
+});
 
 // Ruta para la página de contacto
 router.get('/contacto', (req, res) => {
