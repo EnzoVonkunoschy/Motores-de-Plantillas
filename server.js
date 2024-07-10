@@ -5,14 +5,13 @@ import router from './routes/routes.js'
 
 var app = express()
 app.use('/', router);
-/* 
-app.get('/',function(req,res){
-    res.send('Bienvenido a Tutoriales');
-});*/
+
+app.set('view engine', 'ejs');
 
 app.get('/Node',function(req,res)
 {
- res.send("Tutorial en Node");
+ //res.send("Tutorial en Node");
+ res.render('pages/index')
 });
 app.get('/Angular',function(req,res)
 {

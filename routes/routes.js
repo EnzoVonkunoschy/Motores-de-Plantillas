@@ -4,7 +4,8 @@ const router = Router();
 
 // Ruta para la página de inicio
 router.get('/', (req, res) => {
-  res.send('¡Bienvenido a nuestra página de inicio!');
+  //res.send('¡Bienvenido a nuestra página de inicio!');
+  res.render('pages/index')
 });
 
 // Ruta para la página de contacto

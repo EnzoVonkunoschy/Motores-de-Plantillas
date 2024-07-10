@@ -1,0 +1,17 @@
+Estructura de plantillas:
+- views
+----- partials
+---------- footer.ejs
+---------- head.ejs
+---------- header.ejs
+----- pages
+---------- index.ejs
+---------- about.ejs
+- package.json
+- server.js
+
+Instalación de dependencias por consola:
+npm init -y
+npm i express
+npm i ejs
+
