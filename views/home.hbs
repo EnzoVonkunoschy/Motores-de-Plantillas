@@ -1,0 +1,22 @@
+
+{{>header}}
+<h3>Todos los Socios:</h3>
+<ul>
+  {{#each socios}}
+    
+        <li>{{this.nombre}}    {{this.edad}}</li>
+   
+  {{/each}}
+</ul>
+
+<h3>Socios al día:</h3>
+<ul>
+  {{#each socios}}
+    {{#if this.estado}}
+        <li>{{this.nombre}}    {{this.edad}}</li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+{{>footer}}
+
