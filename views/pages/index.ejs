@@ -8,10 +8,24 @@
         <%- include('../partials/header'); %>
     </header>
     <main>
-    <div class="jumbotron">
-    <h1>This is great</h1>
-    <p>Welcome to templating using EJS</p>
-    </div>
+        <div class="jumbotron">
+            <h1>This is great</h1>
+            <p>Welcome to templating using EJS</p>
+        </div>
+        <!--<pre><%= tagline %></pre>-->
+        <h2><%= tagline %></h2>
+
+        <!--pre><%= JSON.stringify(mascots) %></pre-->
+        <% mascots.forEach(mas=>{ %>
+            <pre><%= mas.name %> <%= mas.organization %>    <%= mas.birth_year %></pre>
+        <% }) %>
+
+        <p style="background-color: burlywood;">Las menores</p>
+        <% mascots.forEach(mas=>{ %>
+            <% if(mas.birth_year>2000){ %>
+            <pre><%= mas.name %> <%= mas.organization %>    <%= mas.birth_year %></pre>
+            <% } %>
+        <% }) %>
     </main>
     <footer>
         <%- include('../partials/footer'); %>
